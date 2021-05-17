@@ -1,8 +1,13 @@
+Author
+==============
+God Bennett (benet@adalabsafrica.com)
+
+
 
 About
 ==============
 
-Beginning on Tue 2/26/2019 (February 2019), this project sought to supplement current Fraud Guard method with neural network based code/method that I prepared/wrote, for the goal/purpose of [improved fraud detection by > 50%](http://news.mit.edu/2018/machine-learning-financial-credit-card-fraud-0920).
+Beginning on Tue 2/26/2019 (February 2019), this project sought to supplement current Fraud Detection method at a Jamaican Bank, with neural network based code/method that I prepared/wrote, for the goal/purpose of [improved fraud detection by > 50%](http://news.mit.edu/2018/machine-learning-financial-credit-card-fraud-0920).
 
 The current method of the Jamaican Bank's fraud detection though well structured, could be enhanced/supplemented by automatic means of credit card fraud detection, namely via the use of artificial intelligence. Artificial neural networks are quite general; there are neural networks that enable self-driving cars, while the same neural network types also enable disease diagnosis, language translation etc. 
 
