@@ -1,3 +1,9 @@
+Author
+==============
+God Bennett
+
+Summary
+[Credit card fraud detection Ai layer by God Bennett.pdf](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/Credit%20Card%20Fraud%20Detection%20Ai%20Layer%20by%20God%20Bennett.pdf)
 
 About
 ==============
