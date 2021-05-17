@@ -1,0 +1,67 @@
+Notes by God Bennett
+
+===================
+On Jamaica Bank data:
+95.66% accuracy
+
+total transactions 
+= fp + fn + tp + tn = false positives + false negatives + true positives + true negative
+= 3708 + 197 + 85562 + 533 = 90000
+
+
+
+correct predictions 
+= tp + tn 
+= 85562 + 533
+= 86095/90000 = 95.66%
+
+
+incorrect predictions
+= fp + fn 
+= 3708 + 197 
+= 3905/90000
+= 0.04338888888  or 4.3%
+
+
+
+
+On Jamaica Bank data:
+95.48% accuracy
+
+total transactions 
+= fp + fn + tp + tn = false positives + false negatives + true positives + true negative
+= 3911 + 157 + 85489 + 443 = 90000
+
+
+
+correct predictions 
+= tp + tn 
+= 85489 + 443
+= 85932/90000 = 95.48%
+
+
+incorrect predictions
+= fp + fn 
+= 3911 + 157 
+= 4068/90000
+
+ = 0.0452 or 4.5%
+ 
+ 
+ 
+ 
+
+
+
+===================
+On euro bank data:
+99.93% acuracy
+
+
+
+
+
+
+
+
+
