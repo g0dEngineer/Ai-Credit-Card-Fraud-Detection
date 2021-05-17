@@ -12,9 +12,7 @@ Nowadays, most modern systems, including ones that [other banks like COK are usi
 
 As the bank gets more complex, we’ll reasonably need to use neural networks or some similar method to do fraud detection, because it is already hard for rule builders to keep up with fraud patterns with the current non-neural network based method, and neural network or similar methods capture more frauds, and minimizes the amount of transactions that are falsely detected as fraudulent, [by up to 54%.](http://news.mit.edu/2018/machine-learning-financial-credit-card-fraud-0920)
 
-**Update 3/26/2020**: In fact, [Tsys' latest Fico Fraud Management system utilizes artificial neural networks.](https://www.tsys.com/Assets/TSYS/downloads/br_tsys-fraud-mitigation.pdf)!
-
-    *  I proposed that the Jamaican bank shall seek to integrate a neural net based pipeline, using the credit card artificial neural network code prepared by myself that this repository refers to or similar.
+ * I proposed that the Jamaican bank shall seek to integrate a neural net based pipeline, using the credit card artificial neural network code prepared by myself that this repository refers to or similar.
 
 Quick explanation of how this neural network works
 ==============
