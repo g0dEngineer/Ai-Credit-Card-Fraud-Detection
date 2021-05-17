@@ -1,13 +1,8 @@
-Author
-==============
-God Bennett (benet@adalabsafrica.com)
-
-
 
 About
 ==============
 
-Beginning on Tue 2/26/2019 (February 2019), this project sought to supplement current Fraud Detection method at a Jamaican Bank, with neural network based code/method that I prepared/wrote, for the goal/purpose of [improved fraud detection by > 50%](http://news.mit.edu/2018/machine-learning-financial-credit-card-fraud-0920).
+Beginning on Tue 2/26/2019 (February 2019), this project sought to supplement current Fraud Guard method with neural network based code/method that I prepared/wrote, for the goal/purpose of [improved fraud detection by > 50%](http://news.mit.edu/2018/machine-learning-financial-credit-card-fraud-0920).
 
 The current method of the Jamaican Bank's fraud detection though well structured, could be enhanced/supplemented by automatic means of credit card fraud detection, namely via the use of artificial intelligence. Artificial neural networks are quite general; there are neural networks that enable self-driving cars, while the same neural network types also enable disease diagnosis, language translation etc. 
 
@@ -64,8 +59,8 @@ Uses python 3.6, Requires keras, matplotlib, pandas, sklearn, numpy and tensorfl
 Installation
 ==============
 
-1. Download [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/bennett_credit-card-fraud-detection_neural-network.py) from this repository.
-2. Put **[export_300k_v2_masked_JAMAICAN_BANK_Columns.csv](https://drive.google.com/file/d/1QuH-iWaFIOh1KtiyRy1BIHJ6rxReK2KR/view?usp=sharing)** in same directory as [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/bennett_credit-card-fraud-detection_neural-network.py).
+1. Download [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/bennett_credit-card-fraud-detection_neural-network%20%5B402_lines%5D.py) from this repository.
+2. Put **[export_300k_v2_masked_JAMAICAN_BANK_Columns.csv](https://drive.google.com/file/d/1QuH-iWaFIOh1KtiyRy1BIHJ6rxReK2KR/view?usp=sharing)** in same directory as [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/bennett_credit-card-fraud-detection_neural-network%20%5B402_lines%5D.py).
 3. Install all python modules seen in [Requirements](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection#requirements).
 
 
@@ -83,7 +78,7 @@ There are two ways to use this artificial neural network system:
             * There are 299,999 records in dataset csv, and of those, the training process used the first 70%.
             * To really test the neural network, means to expose it to a record it didn't see in training.
             * Copy any record after cell 210,000 **(except for the last column which is the label)**. Records after 210,000 are outside of the "70%" training set.
-            * Paste the copied record into python shell after neural network training ran, as parameter "newTransactionRecordString" from function [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/bennett_credit-card-fraud-detection_neural-network.py)/ doOnlineInferenceOnRawRecord ( newTransactionRecordString ).
+            * Paste the copied record into python shell after neural network training ran, as parameter "newTransactionRecordString" from function [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/bennett_credit-card-fraud-detection_neural-network%20%5B402_lines%5D.py)/ doOnlineInferenceOnRawRecord ( newTransactionRecordString ).
             * Take note of the result.
                 * Eg a: Record A223999 is labelled 0, and neural net prediction is accurate at 0.029. (Closer to 0) See **data/notFraudulent_onlineInferenceOnRecord_A223999.png**.
 				
@@ -91,7 +86,7 @@ There are two ways to use this artificial neural network system:
              
 
 2. The quicker way: Running a pretrained model prepared by myself, that doesn't require training.
-    * Download [JAMAICAN_BANK_load_saved_model_test.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/data/JAMAICAN_BANK_load_saved_model_test.py) from the data folder in this repository.
+    * Download [JAMAICAN_BANK_load_saved_model_test.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/JAMAICAN_BANK_load_saved_model_test.py) from the data folder in this repository.
     * Download [95.66%_saved_JAMAICAN_BANK_neural_network_weights.h5](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/data/95.66%25_saved_JAMAICAN_BANK_neural_network_weights.h5) from the data folder of this repository.
     * Ensure the files above are in the directory of the csv file from the "[Installation](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/README.md#installation)" step of this repository.
     * To make predictions, do the same steps done in the training phase above, **particularly, starting from** "Run the trained neural network...".
@@ -113,7 +108,7 @@ It is important to guage how well an ai model is doing, in ai research and imple
 
 
 
-Invoking the function "showConfusionMatrix()" in [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/master/bennett_credit-card-fraud-detection_neural-network.py) reveals the confusion matrix:
+Invoking the function "showConfusionMatrix()" in [bennett_credit-card-fraud-detection_neural-network.py](https://github.com/g0dEngineer/Ai-Credit-Card-Fraud-Detection/blob/main/bennett_credit-card-fraud-detection_neural-network%20%5B402_lines%5D.py) reveals the confusion matrix:
 
 ![Alt-Text](data/95.66%25_JAMAICAN_BANK_data_confusion_matrix.png)
 
