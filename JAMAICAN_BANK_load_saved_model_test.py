@@ -1,4 +1,4 @@
-#Author God Bennett/GITD. (My name was legally changed from Jordan Bennett) Bennett 
+#Author God Bennett/AdaLabs.
 #Simple test to load saved model.
 #To do further testing one may simply copy the onlineInference functions doOnlineInferenceOnRawRecord
 from keras.models import load_model
@@ -6,13 +6,13 @@ import pandas as pd
 import numpy as np
 
 
-inputDimensions = 65 ##Corresponds to number of non-class columns in ncb input data file.
+inputDimensions = 65 ##Corresponds to number of non-class columns in Jamaican Bank input data file.
 
 # read dataset
-data = pd.read_csv('data/export_300k_v2.csv') 
+data = pd.read_csv('data/export_300k_v2_masked_JAMAICAN_BANK_Columns.csv') 
 
 # create model based on saved weights
-model = load_model('data/95.66%_saved_NCB_neural_network_weights.h5')
+model = load_model('data/95.66%_saved_JAMAICAN_BANK_neural_network_weights.h5')
 
 # split data into labels and training 
 X = data.drop('CARDFLAGFRAUD',axis=1)
@@ -47,8 +47,8 @@ def showConfusionMatrix():
 #online inference functions for precise testing
 exampleRawRecord = "177027	0	364	0	0	99	0	1	1	359.93	-449.47	17400	-792.84	-17.98	-9.7	0	8.28	-351.65	-351.65	0	0	0	0	0	0	0	0	0	0	0	0	39511	1160	15	59398847	13766	13386	13374	13370	13378	201	86750	815867	5.43E+15	100	80.17	-80.17	0	840	840	80.17	5542	162722199	50638	653386	104	141	159	156	604	1	2048	1	1.15E+18	0";
 
-###############################################God Bennett/GITD. (My name was legally changed from Jordan Bennett)_function_4
-####God Bennett/GITD. (My name was legally changed from Jordan Bennett) function 4 to add online inference or real time test capability to the model.
+###############################################God Bennett/AdaLabs. (My name was legally changed from Jordan Bennett)_function_4
+####God Bennett/AdaLabs. (My name was legally changed from Jordan Bennett) function 4 to add online inference or real time test capability to the model.
 """
 This function does a prediction from test data that has been taken directly from excel input file "creditcard.csv".
 (before which it is sorrounded by array braces, and written with commas)
@@ -112,7 +112,7 @@ def doOnlineInferenceOnRawRecord ( newTransactionRecordString ):
        #finally, float and round the resulting string value that emerges from "remove_exponent" function.
        return round(float(remove_exponent(model.predict (X_grown[len(X_grown)-1].reshape (1,inputDimensions), batch_size=1) [0][0])),4)
 
-###############################################God Bennett/GITD. (My name was legally changed from Jordan Bennett)_function_4
+###############################################God Bennett/AdaLabs. (My name was legally changed from Jordan Bennett)_function_4
 
 """function used to remove exponent from value, to a more readable format
 Source: https://stackoverflow.com/questions/9195800/converting-exponential-to-float
