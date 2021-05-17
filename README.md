@@ -22,7 +22,7 @@ Quick explanation of how this neural network works
 4. In testing aka inference (simulating when a single customer does a payment etc); expose neural network to unlabelled transactions. 
     * Neural network then produces a float value between 0 and 1 for each unlabelled transaction, where value closer to 1 indicates prediction of fraud, while closer to 0 indicates non-fraud.
 
-See [this seminar lead by God Bennett, held for University Students, as well as a Jamaican Bank's team members, concerning basic artificial neural networks](https://github.com/GodMicahBennett/Live-Agile-Artificial-Neural-Network-Programming-Sessions).
+See [this seminar lead by God Bennett, held for University Students, as well as a Jamaican Bank's team members, concerning basic artificial neural networks](https://github.com/JordanMicahBennett/Live-Agile-Artificial-Neural-Network-Programming-Sessions).
 
 
 
